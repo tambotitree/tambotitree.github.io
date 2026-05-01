@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tambotitree — Projects</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --accent: #58a6ff;
+      --accent2: #3fb950;
+      --text: #c9d1d9;
+      --muted: #8b949e;
+      --radius: 8px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 4rem 2rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      margin-top: 0.6rem;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.6rem 1.8rem;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .card-icon {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.15em 0.55em;
+      border-radius: 2em;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      margin-top: 0.8rem;
+      margin-right: 0.3rem;
+    }
+
+    /* Music card extras */
+    .music-album {
+      margin-top: 1.2rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .album-thumb {
+      position: relative;
+      width: 120px;
+      flex-shrink: 0;
+    }
+
+    .album-thumb img {
+      width: 100%;
+      border-radius: 4px;
+      display: block;
+      border: 1px solid var(--border);
+    }
+
+    .album-info h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .album-info p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    .btn-yt {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      margin-top: 0.75rem;
+      padding: 0.45em 1em;
+      background: #ff0000;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: opacity 0.15s;
+    }
+
+    .btn-yt:hover { opacity: 0.85; }
+
+    .btn-yt svg {
+      width: 18px;
+      height: 18px;
+      fill: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>tambotitree</h1>
+  <p>Physics &middot; Electronics &middot; AI &middot; Music</p>
+</header>
+
+<main>
+
+  <!-- Physics -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">⚛️</span>
+      <h2>Physics — Principles of Entropy</h2>
+    </div>
+    <p>
+      Exploring the foundations of thermodynamics and information theory through
+      the lens of entropy. Research notes, derivations, and computational
+      experiments on how disorder emerges in physical and abstract systems.
+    </p>
+    <span class="tag">thermodynamics</span>
+    <span class="tag">information theory</span>
+    <span class="tag">statistical mechanics</span>
+  </div>
+
+  <!-- Electronics -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🔌</span>
+      <h2>Electronics</h2>
+    </div>
+    <p>
+      Hardware design, circuit simulation, and embedded systems projects.
+      From low-noise analog circuits to microcontroller firmware — building
+      physical things that interact with the world.
+    </p>
+    <span class="tag">analog</span>
+    <span class="tag">embedded</span>
+    <span class="tag">PCB design</span>
+  </div>
+
+  <!-- AI -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🤖</span>
+      <h2>AI Development</h2>
+    </div>
+    <p>
+      Machine learning experiments, neural architectures, and applied AI
+      tooling. Focused on interpretability, generative models, and the
+      intersection of AI with the other disciplines on this page.
+    </p>
+    <span class="tag">machine learning</span>
+    <span class="tag">generative models</span>
+    <span class="tag">Python</span>
+  </div>
+
+  <!-- Music -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🎵</span>
+      <h2>Music</h2>
+    </div>
+    <p>
+      Original compositions that draw on everyday life in the barangay —
+      food, work, and the rhythms of the neighbourhood.
+    </p>
+
+    <div class="music-album">
+      <div class="album-thumb">
+        <!-- YouTube thumbnail (auto-served by Google, no hotlink issues) -->
+        <img
+          src="https://img.youtube.com/vi/sElZE8XLwfE/mqdefault.jpg"
+          alt="Humba album art"
+        />
+      </div>
+      <div class="album-info">
+        <h3>Humba</h3>
+        <p>John Ryan&nbsp;&mdash;&nbsp;Music from the barangay&nbsp;&mdash;&nbsp;food, work, and everyday life.</p>
+        <a
+          class="btn-yt"
+          href="https://www.youtube.com/watch?v=sElZE8XLwfE"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <!-- YouTube play icon -->
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+          </svg>
+          Listen on YouTube
+        </a>
+      </div>
+    </div>
+
+    <span class="tag">original music</span>
+    <span class="tag">Filipino</span>
+  </div>
+
+</main>
+
+<footer>
+  <p>
+    <a href="https://github.com/tambotitree" target="_blank" rel="noopener noreferrer">github.com/tambotitree</a>
+    &nbsp;&mdash;&nbsp; many projects are private; public work is linked above.
+  </p>
+</footer>
+
+</body>
+</html>
